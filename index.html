@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Green API Tools</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <input type="text" id="idInstance" placeholder="idInstance" />
+      <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance" />
+
+      <button onclick="getSettings()">getSettings</button>
+      <button onclick="getState()">getStateInstance</button>
+
+      <input type="text" id="chatIdMessage" placeholder="77771234567" />
+      <textarea id="messageText" placeholder="Hello World!"></textarea>
+      <button onclick="sendMessage()">sendMessage</button>
+
+      <input type="text" id="chatIdFile" placeholder="77771234567" />
+      <input type="text" id="fileUrl" placeholder="https://my.site.com/img/horse.png" />
+      <button onclick="sendFile()">sendFileByUrl</button>
+    </div>
+
+    <div class="right">
+      <h3>Ответ:</h3>
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
