@@ -8,7 +8,6 @@ function output(response) {
   document.getElementById('output').value = JSON.stringify(response, null, 2);
 }
 
-// === GET SETTINGS ===
 async function getSettings() {
   try {
     const res = await fetch(getApiUrl('getSettings'));
@@ -18,7 +17,6 @@ async function getSettings() {
   }
 }
 
-// === GET STATE INSTANCE ===
 async function getState() {
   try {
     const res = await fetch(getApiUrl('getStateInstance'));
@@ -28,7 +26,6 @@ async function getState() {
   }
 }
 
-// === SEND MESSAGE ===
 async function sendMessage() {
   const chatId = document.getElementById('chatIdMessage').value.trim();
   const message = document.getElementById('messageText').value.trim();
@@ -56,7 +53,6 @@ async function sendMessage() {
   }
 }
 
-// === SEND FILE BY URL ===
 async function sendFile() {
   const chatId = document.getElementById('chatIdFile').value.trim();
   const urlFile = document.getElementById('fileUrl').value.trim();
